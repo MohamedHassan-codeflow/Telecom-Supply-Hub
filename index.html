@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telecom Supply Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">TS</span>
+      <span>Telecom Supply Hub</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="cart.html" class="cart-link"><span class="cart-icon">🛒</span><span class="cart-text">Cart</span><span id="cartCount">0</span></a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-icon">✓</span>
+          <div>
+            <strong>Certified Telecom Procurement</strong>
+            <small>Network materials, civil supplies, electrical, tools & safety equipment</small>
+          </div>
+        </div>
+
+        <h1>Your One-Stop Telecom Supply Marketplace</h1>
+
+        <p>
+          Buy telecom materials, civil work supplies, installation tools, testing equipment,
+          safety products, and field operation essentials from one professional platform.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-primary">Shop Products</a>
+          <a href="#categories" class="btn btn-secondary">Browse Categories</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card"><strong>30</strong><span>Reliable Products</span></div>
+          <div class="stat-card"><strong>6</strong><span>Main Categories</span></div>
+          <div class="stat-card"><strong>100%</strong><span>Matched Visuals</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <h3>Project Supply Kit</h3>
+          <span>Recommended</span>
+        </div>
+
+        <div class="supply-list">
+          <div><strong>Fiber Accessories</strong><span>Cables, ODF, FTTH boxes, closures</span></div>
+          <div><strong>Civil Work Materials</strong><span>Manholes, ducts, poles, concrete bases</span></div>
+          <div><strong>Safety Equipment</strong><span>Helmet, harness, PPE, safety cones</span></div>
+          <div><strong>Testing Tools</strong><span>OTDR, power meter, fault locator, testers</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section category-section" id="categories">
+      <div class="section-title center">
+        <p class="eyebrow">Shop By Category</p>
+        <h2>Everything telecom teams need for network projects.</h2>
+        <p>Organized categories for telecom installation, civil work, safety, testing, and field maintenance.</p>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card"><div class="category-icon">🔌</div><h3>Telecom Materials</h3><p>Fiber cables, ODF cabinets, patch cords, closures, and FTTH boxes.</p></article>
+        <article class="category-card"><div class="category-icon">🏗️</div><h3>Civil Work</h3><p>Ducts, manholes, poles, concrete bases, and warning tape.</p></article>
+        <article class="category-card"><div class="category-icon">⚡</div><h3>Electrical Materials</h3><p>Electrical cables, cable lugs, grounding cables, breakers, and cable glands.</p></article>
+        <article class="category-card"><div class="category-icon">🧰</div><h3>Tools</h3><p>Splicing kits, fusion splicers, cleavers, crimpers, and field tools.</p></article>
+        <article class="category-card"><div class="category-icon">🦺</div><h3>Safety Tools</h3><p>PPE kits, helmets, harnesses, gloves, cones, and safety items.</p></article>
+        <article class="category-card"><div class="category-icon">📊</div><h3>Testing Equipment</h3><p>OTDR, power meters, fault locators, cable testers, and multimeters.</p></article>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="section-title">
+        <p class="eyebrow">Reliable Product Catalog</p>
+        <h2>Matched product visuals for every item.</h2>
+        <p>This catalog includes telecom, civil, electrical, tools, safety, and testing products with compact responsive display.</p>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filter-panel">
+          <input type="text" id="searchInput" class="search-box" placeholder="Search products..." />
+
+          <div class="filter-list">
+            <button class="filter-btn active" data-category="all">All Products</button>
+            <button class="filter-btn" data-category="telecom">Telecom Materials</button>
+            <button class="filter-btn" data-category="civil">Civil Work</button>
+            <button class="filter-btn" data-category="electrical">Electrical Materials</button>
+            <button class="filter-btn" data-category="tools">Tools</button>
+            <button class="filter-btn" data-category="safety">Safety Tools</button>
+            <button class="filter-btn" data-category="testing">Testing Equipment</button>
+          </div>
+        </aside>
+
+        <div class="product-grid" id="productGrid"></div>
+
+        <div class="pagination-controls" id="paginationControls">
+          <button class="page-arrow" id="prevPageBtn">←</button>
+          <div class="page-numbers" id="pageNumbers"></div>
+          <button class="page-arrow" id="nextPageBtn">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-us" id="why-us">
+      <div class="section-title center">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Built for telecom contractors, engineers, and field teams.</h2>
+        <p>A clean e-commerce experience focused on reliable procurement for telecom network deployment and maintenance.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card"><span>🚚</span><h3>Project-Based Supply</h3><p>Order materials based on rollout, maintenance, or installation project needs.</p></div>
+        <div class="feature-card"><span>✅</span><h3>Matched Product Visuals</h3><p>Every product square has a clear visual that matches the product name.</p></div>
+        <div class="feature-card"><span>📦</span><h3>Complete Field Kits</h3><p>Ready kits for telecom technicians, civil teams, electrical teams, and safety supervisors.</p></div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <h2>Need telecom materials for your next project?</h2>
+        <p>Contact our supply team for bulk orders, project kits, telecom rollout materials, and safety equipment packages.</p>
+      </div>
+      <a href="mailto:sales@telecomsupplyhub.com" class="btn btn-secondary">Request Quotation</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="logo footer-logo"><span class="logo-mark">TS</span><span>Telecom Supply Hub</span></div>
+      <p>A professional e-commerce platform for telecom materials, civil work supplies, tools, and safety equipment.</p>
+    </div>
+    <div><h4>Shop</h4><a href="#products">Telecom Materials</a><a href="#products">Civil Work</a><a href="#products">Electrical Materials</a><a href="#products">Safety Tools</a></div>
+    <div><h4>Company</h4><a href="#why-us">Why Us</a><a href="#categories">Categories</a><a href="#contact">Contact</a></div>
+    <div><h4>Contact</h4><p>sales@telecomsupplyhub.com</p><p>Telecom Supply Team</p></div>
+  </footer>
+
+  <div class="footer-bottom">© 2026 Telecom Supply Hub. All rights reserved.</div>
+  <script src="script.js"></script>
+</body>
+</html>
